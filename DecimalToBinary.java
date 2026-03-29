@@ -13,7 +13,7 @@ public class DecimalToBinary {
             x = x/2;
         }
         list.add(x);
-        Collections.reverse(list);
+        Collections.reverse(list); 
         return list;
     }
 }

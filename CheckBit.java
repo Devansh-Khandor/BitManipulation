@@ -7,8 +7,13 @@ import java.util.Collections;
 public class CheckBit {
     public static void main(String args[]){
         System.out.println(checkKthBit(4, 0));
-        System.out.println(checkKthBit(4, 2));
+        System.out.println(checkKthBitBEST(4, 0));
 
+    }
+
+    public static boolean checkKthBitBEST(int n, int k){
+        int a = n>>k;
+        return (a&1)==1;
     }
     
     public static boolean checkKthBit(int n, int k) {
